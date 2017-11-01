@@ -24,8 +24,11 @@ webpackEmptyAsyncContext.id = "../../../../../src/$$_gendir lazy recursive";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppRoutingModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__test_test_component__ = __webpack_require__("../../../../../src/app/test/test.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__steps_steps_component__ = __webpack_require__("../../../../../src/app/steps/steps.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__test_test_component__ = __webpack_require__("../../../../../src/app/test/test.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__test2_test2_component__ = __webpack_require__("../../../../../src/app/test2/test2.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__steps_steps_component__ = __webpack_require__("../../../../../src/app/steps/steps.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__boot_boot_component__ = __webpack_require__("../../../../../src/app/boot/boot.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -36,17 +39,26 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
+
 var routes = [
     {
         path: '',
-        component: __WEBPACK_IMPORTED_MODULE_2__test_test_component__["a" /* TestComponent */],
+        component: __WEBPACK_IMPORTED_MODULE_2__home_home_component__["a" /* HomeComponent */],
     },
     {
         path: 'steps',
-        component: __WEBPACK_IMPORTED_MODULE_3__steps_steps_component__["a" /* StepsComponent */],
+        component: __WEBPACK_IMPORTED_MODULE_5__steps_steps_component__["a" /* StepsComponent */],
     }, {
         path: 'test',
-        component: __WEBPACK_IMPORTED_MODULE_2__test_test_component__["a" /* TestComponent */],
+        component: __WEBPACK_IMPORTED_MODULE_3__test_test_component__["a" /* TestComponent */],
+    }, {
+        path: 'test2',
+        component: __WEBPACK_IMPORTED_MODULE_4__test2_test2_component__["a" /* Test2Component */],
+    }, {
+        path: 'boot',
+        component: __WEBPACK_IMPORTED_MODULE_6__boot_boot_component__["a" /* BootComponent */],
     }
 ];
 var AppRoutingModule = (function () {
@@ -91,7 +103,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<div style=\"text-align:center\">\n  <h1>\n    Welcome to {{title}}!\n  </h1>\n  <img width=\"150\" src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==\">\n</div>\n<nav [ngClass]=\"'menu'\">\r\n  <a routerLink=\"/\" routerLinkActive=\"active-link\">Home</a> |\r\n  <a routerLink=\"test\" routerLinkActive=\"active-link\">test</a> |\r\n  <a routerLink=\"/steps\" routerLinkActive=\"active-link\">steps</a>\r\n</nav>\n<br />\n<router-outlet></router-outlet>\n\n"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<div style=\"text-align:center\">\n  <h1>\n    Welcome to {{title}}!\n  </h1>\n  \n</div>\n<div class=\"container\">\n  <nav [ngClass]=\"'menu'\">\r\n    <a routerLink=\"/\" routerLinkActive=\"active-link\">Home</a> |\r\n    <a routerLink=\"test\" routerLinkActive=\"active-link\">test</a> |\r\n    <a routerLink=\"test2\" routerLinkActive=\"active-link\">test2</a> |\r\n    <a routerLink=\"/steps\" routerLinkActive=\"active-link\">steps</a>|\r\n    <a routerLink=\"/boot\" routerLinkActive=\"active-link\">Form</a>\r\n  </nav>\r\n  <br />\n</div>\n\n<router-outlet></router-outlet>\n\n"
 
 /***/ }),
 
@@ -140,12 +152,18 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__steps_steps_component__ = __webpack_require__("../../../../../src/app/steps/steps.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__test_test_component__ = __webpack_require__("../../../../../src/app/test/test.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__test2_test2_component__ = __webpack_require__("../../../../../src/app/test2/test2.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__boot_boot_component__ = __webpack_require__("../../../../../src/app/boot/boot.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
 
 
 
@@ -165,7 +183,10 @@ AppModule = __decorate([
         declarations: [
             __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */],
             __WEBPACK_IMPORTED_MODULE_7__steps_steps_component__["a" /* StepsComponent */],
-            __WEBPACK_IMPORTED_MODULE_8__test_test_component__["a" /* TestComponent */]
+            __WEBPACK_IMPORTED_MODULE_8__test_test_component__["a" /* TestComponent */],
+            __WEBPACK_IMPORTED_MODULE_9__test2_test2_component__["a" /* Test2Component */],
+            __WEBPACK_IMPORTED_MODULE_10__boot_boot_component__["a" /* BootComponent */],
+            __WEBPACK_IMPORTED_MODULE_11__home_home_component__["a" /* HomeComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -181,6 +202,128 @@ AppModule = __decorate([
 ], AppModule);
 
 //# sourceMappingURL=app.module.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/boot/boot.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/boot/boot.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "\r\n<div class=\"container\">\r\n  <form>\r\n\r\n    <div class=\"form-group\">\r\n      <!-- Name field -->\r\n      <label class=\"control-label \" for=\"name\">Name</label>\r\n      <input class=\"form-control\" id=\"name\" name=\"name\" type=\"text\" />\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <!-- Email field -->\r\n      <label class=\"control-label requiredField\" for=\"email\">Email<span class=\"asteriskField\">*</span></label>\r\n      <input class=\"form-control\" id=\"email\" name=\"email\" type=\"text\" />\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <!-- Subject field -->\r\n      <label class=\"control-label \" for=\"subject\">Subject</label>\r\n      <input class=\"form-control\" id=\"subject\" name=\"subject\" type=\"text\" />\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <!-- Message field -->\r\n      <label class=\"control-label \" for=\"message\">Message</label>\r\n      <textarea class=\"form-control\" cols=\"40\" id=\"message\" name=\"message\" rows=\"5\"></textarea>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <button class=\"btn btn-primary \" name=\"submit\" type=\"submit\">Submit</button>\r\n    </div>\r\n\r\n  </form>\t\r\n</div>\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/boot/boot.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BootComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var BootComponent = (function () {
+    function BootComponent() {
+    }
+    BootComponent.prototype.ngOnInit = function () {
+    };
+    return BootComponent;
+}());
+BootComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-boot',
+        template: __webpack_require__("../../../../../src/app/boot/boot.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/boot/boot.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], BootComponent);
+
+//# sourceMappingURL=boot.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/home/home.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/home/home.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "\r\n<div class=\"container\">\r\n  <p>\r\n    Home Component  </p>\r\n\r\n\r\n\r\n</div>\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/home/home.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var HomeComponent = (function () {
+    function HomeComponent() {
+    }
+    HomeComponent.prototype.ngOnInit = function () {
+    };
+    return HomeComponent;
+}());
+HomeComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-home',
+        template: __webpack_require__("../../../../../src/app/home/home.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/home/home.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], HomeComponent);
+
+//# sourceMappingURL=home.component.js.map
 
 /***/ }),
 
@@ -205,7 +348,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/steps/steps.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  steps works!\n</p>\n\n\n<div id=\"exTab2\" class=\"container\">\r\n  <ul class=\"nav nav-tabs\">\r\n    <li class=\"active\">\r\n      <a href=\"#1\" data-toggle=\"tab\">Overview</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"#2\" data-toggle=\"tab\">Without clearfix</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"#3\" data-toggle=\"tab\">Solution</a>\r\n    </li>\r\n  </ul>\r\n\r\n  <div class=\"tab-content \">\r\n    <div class=\"tab-pane active\" id=\"1\">\r\n      <h3>Standard tab panel created on bootstrap using nav-tabs</h3>\r\n    </div>\r\n    <div class=\"tab-pane\" id=\"2\">\r\n      <h3>Notice the gap between the content and tab after applying a background color</h3>\r\n    </div>\r\n    <div class=\"tab-pane\" id=\"3\">\r\n      <h3>add clearfix to tab-content (see the css)</h3>\r\n    </div>\r\n  </div>\r\n</div>\n"
+module.exports = "\n\n<div id=\"exTab2\" class=\"container\">\r\n  <p>\r\n    steps works!\r\n  </p>\r\n\r\n\r\n  <ul class=\"nav nav-tabs\">\r\n    <li class=\"active\">\r\n      <a href=\"#1\" data-toggle=\"tab\">Overview</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"#2\" data-toggle=\"tab\">Without clearfix</a>\r\n    </li>\r\n    <li>\r\n      <a href=\"#3\" data-toggle=\"tab\">Solution</a>\r\n    </li>\r\n  </ul>\r\n\r\n  <div class=\"tab-content \">\r\n    <div class=\"tab-pane active\" id=\"1\">\r\n      <h3>Standard tab panel created on bootstrap using nav-tabs</h3>\r\n    </div>\r\n    <div class=\"tab-pane\" id=\"2\">\r\n      <h3>Notice the gap between the content and tab after applying a background color</h3>\r\n    </div>\r\n    <div class=\"tab-pane\" id=\"3\">\r\n      <h3>add clearfix to tab-content (see the css)</h3>\r\n    </div>\r\n  </div>\r\n</div>\n"
 
 /***/ }),
 
@@ -274,7 +417,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/test/test.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  test works!\n</p>\ntest component\n"
+module.exports = "\n<div class=\"container\">\n  <p>\r\n    test works!\r\n  </p>\r\n  test component\n\n\n</div>\n\n"
 
 /***/ }),
 
@@ -311,6 +454,67 @@ TestComponent = __decorate([
 ], TestComponent);
 
 //# sourceMappingURL=test.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/test2/test2.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/test2/test2.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\r\n  <p>\r\n    test 2 works!\r\n  </p>\r\n  test component\r\n  222222222222222222222\r\n\r\n</div>\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/test2/test2.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Test2Component; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var Test2Component = (function () {
+    function Test2Component() {
+    }
+    Test2Component.prototype.ngOnInit = function () {
+    };
+    return Test2Component;
+}());
+Test2Component = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-test2',
+        template: __webpack_require__("../../../../../src/app/test2/test2.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/test2/test2.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], Test2Component);
+
+//# sourceMappingURL=test2.component.js.map
 
 /***/ }),
 

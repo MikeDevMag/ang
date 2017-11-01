@@ -9,12 +9,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { StepsComponent } from './steps/steps.component';
 import { TestComponent } from './test/test.component';
+import { Test2Component } from './test2/test2.component';
+import { BootComponent } from './boot/boot.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StepsComponent,
-    TestComponent
+    TestComponent,
+    Test2Component,
+    BootComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
