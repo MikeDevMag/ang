@@ -34,9 +34,7 @@ export class BookService {
 
         let headers = new Headers({ 'Content-Type': 'application/json' });
         let options = new RequestOptions({ headers: headers });
-       
-        //var values = {};
-        //var tblItem = "tblBook";
+
         var param = JSON.stringify(values);
         options.body = param;
 
@@ -48,26 +46,6 @@ export class BookService {
         var test2 = ret;
         return ret;
 
-        //var values = {};
-        //values.p_sqlWhere = pKey + " = " + recId;
-        //values.p_sqlOrder = " Order By " + pKey;
-        //values.p_entity = tblItem;
-        //values.p_entity_sql = $rootScope.tblItemSQL
-        //values.p_returnTarget = "about";
-        //var newParam2 = JSON.stringify(values);
-
-        //if (link === undefined) {
-        //    //sample linkId for testing/demo with no email link
-        //    this.url = this.url + "/73973aed-9293-46fa-8b96-d0820c3f1128";
-        //}
-        //else {
-        //    this.url = this.url + '/' + link;
-        //}
-
-        //return this.http.get(this.url)
-        //    .map(this.extractData)
-        //    .catch(this.handleErrors);
-     //   return null;
     }
 
     getBooks(): Observable<Book[]> {
@@ -77,17 +55,8 @@ export class BookService {
             .map(this.extractData)
             .do(data => console.log('getBooks: '))
             .catch(this.handleError);
-       // var test = JSON.parse(ret.t);
+
         return ret;
-        //let headers = new Headers({ 'Content-Type': 'application/json' });
-        //let options = new RequestOptions({ headers: headers });
-        //var values = {};
-        //var tblItem = "tblBook";
-        //var param = JSON.stringify(values);
-        //return this.http.post(this.baseUrl, param, options)
-        //    .map(this.extractData)
-        //    .do(data => console.log('get: ' + JSON.stringify(data)))
-        //    .catch(this.handleError);
     }
     private handleError(error: Response): Observable<any> {
         // in a real world app, we may send the server to some remote logging infrastructure
@@ -98,18 +67,13 @@ export class BookService {
 
     private extractData(response: Response) {
         let body = response.json();
-      //  var test2 = JSON.parse(body.data);
         var test = JSON.parse(body);
         return test || {};
-      //  return body.data || {};
+
     }
     private extractDataPost(response: Response) {
         let body = response.json();
-        //  var test2 = JSON.parse(body.data);
-      //  var test = JSON.parse(body.Data[0]);
         var test2 = body.Data[0];
-       // var test3 = JSON.parse(test2);
         return test2 || {};
-        //  return body.data || {};
     }
 }

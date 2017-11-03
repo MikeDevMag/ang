@@ -6,12 +6,8 @@
     "\\src\\app\\app-routing",
     "\\src\\app\\book",
     "\\src\\app\\books",
-    "\\src\\app\\boot",
-    "\\src\\app\\home",
-    "\\src\\app\\shared",
-    "\\src\\app\\test",
-    "\\src\\app\\test2"
+    "\\src\\app\\shared"
   ],
-  "SelectedNode": "\\src\\app\\app-routing\\app-routing.module.ts",
+  "SelectedNode": "\\src\\app\\book\\book.component.ts",
   "PreviewInSolutionExplorer": false
 }

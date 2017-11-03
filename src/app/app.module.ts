@@ -16,6 +16,9 @@ import { BooksComponent } from './books/books.component';
 import { BookService } from './shared/book.service';
 import { BookComponent } from './book/book.component';
 
+import { BookResolverServiceService } from './shared/book-resolver-service.service';
+import { BooksResolverServiceService } from './shared/books-resolver-service.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +38,7 @@ import { BookComponent } from './book/book.component';
     ReactiveFormsModule,
     BrowserAnimationsModule,
   ],
-  providers: [BookService],
+  providers: [BookService, BookResolverServiceService, BooksResolverServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

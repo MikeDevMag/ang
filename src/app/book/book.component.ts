@@ -14,7 +14,8 @@ import { Location } from '@angular/common';
 
 import { Book } from '../shared/book';
 import { BookService } from '../shared/book.service';
-import { ApiResponse } from '../shared/apiResponse';
+
+import { BookResolverServiceService } from '../shared/book-resolver-service.service';
 
 @Component({
   selector: 'app-book',
@@ -24,28 +25,23 @@ import { ApiResponse } from '../shared/apiResponse';
 export class BookComponent implements OnInit {
 
     constructor(private route: ActivatedRoute,
-        private location: Location, private bookService: BookService) { }
+        private location: Location,
+       // private bookService: BookService
+    ) { }
 
     idDisplay: string;
     book: Book;
+    ngOnInit() {
 
-  ngOnInit() {
-
-      this.route.paramMap
-          .switchMap((params: ParamMap) => {
-              this.idDisplay = params.get('id');
-              var ret = this.bookService.getBook(+this.idDisplay);
-              return ret;
-           //   return null;
-            //  return this.inviteService.getInvitee(this.secureLinkId);
-          })
-          .subscribe(
-          (invite) => {
-              this.book = invite;
-          },
-          errors => {
-              var test = errors;
-          });
+        // Watch for changes to the resolve data
+        this.route.data.subscribe(data => {
+            this.onBookRetrieved(data['book']);
+          }
+        );
   }
 
+    onBookRetrieved(book: Book): void {
+        var test = book;
+        this.book = book;
+    }
 }

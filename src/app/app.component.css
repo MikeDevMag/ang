@@ -1,0 +1,12 @@
+/* Spinner */
+.spinner {
+  font-size: 200%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  z-index: 10
+}
+
+.spinner-text {
+  text-align: center !important;
+}

@@ -1,7 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
-    Welcome to {{title}}!
+    Angular4 test {{title}}!
   </h1>
   
 </div>
@@ -19,3 +19,9 @@
 
 <router-outlet></router-outlet>
 
+<div class="container-fluid">
+  <span style="text-align:center !important" class="spinner-text" *ngIf="loading">
+    <span class="glyphicon glyphicon-refresh glyphicon-spin spinner"></span>
+    <span style="text-align:center !important" class="spinner-text">Retrieving Data. Please wait...</span>
+  </span>
+</div>
