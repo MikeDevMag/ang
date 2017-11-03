@@ -12,6 +12,9 @@ import { TestComponent } from './test/test.component';
 import { Test2Component } from './test2/test2.component';
 import { BootComponent } from './boot/boot.component';
 import { HomeComponent } from './home/home.component';
+import { BooksComponent } from './books/books.component';
+import { BookService } from './shared/book.service';
+import { BookComponent } from './book/book.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,9 @@ import { HomeComponent } from './home/home.component';
     TestComponent,
     Test2Component,
     BootComponent,
-    HomeComponent
+    HomeComponent,
+    BooksComponent,
+    BookComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +35,7 @@ import { HomeComponent } from './home/home.component';
     ReactiveFormsModule,
     BrowserAnimationsModule,
   ],
-  providers: [],
+  providers: [BookService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,12 @@
+<div class="container">
+  <p>
+    Books works!
+  </p>
+
+  <ul>
+    <li *ngFor="let book of books">
+    <a href="books/{{book.Id}}">{{ book.Name }}</a>  
+    </li>
+  </ul>
+
+</div>

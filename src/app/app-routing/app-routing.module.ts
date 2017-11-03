@@ -5,6 +5,8 @@ import { TestComponent } from '../test/test.component';
 import { Test2Component } from '../test2/test2.component';
 import { StepsComponent } from '../steps/steps.component';
 import { BootComponent } from '../boot/boot.component';
+import { BooksComponent } from '../books/books.component';
+import { BookComponent } from '../book/book.component';
 
 const routes: Routes = [
     {
@@ -23,6 +25,14 @@ const routes: Routes = [
     }, {
         path: 'boot',
         component: BootComponent,
+    },
+    {
+        path: 'books/:id',
+        component: BookComponent
+    },
+    {
+        path: 'books',
+        component: BooksComponent,
     }
 ];
 
