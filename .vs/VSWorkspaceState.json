@@ -1,6 +1,17 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\app-routing",
+    "\\src\\app\\book",
+    "\\src\\app\\books",
+    "\\src\\app\\boot",
+    "\\src\\app\\home",
+    "\\src\\app\\shared",
+    "\\src\\app\\test",
+    "\\src\\app\\test2"
   ],
+  "SelectedNode": "\\src\\app\\app-routing\\app-routing.module.ts",
   "PreviewInSolutionExplorer": false
 }
