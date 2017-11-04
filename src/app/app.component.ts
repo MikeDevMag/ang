@@ -16,7 +16,8 @@ export class AppComponent {
             this.checkRouterEvent(routerEvent);
         });
     }
-
+    ngOnInit() {
+    }
     checkRouterEvent(routerEvent: Event): void {
         if (routerEvent instanceof NavigationStart) {
             this.loading = true;
@@ -26,6 +27,25 @@ export class AppComponent {
             routerEvent instanceof NavigationCancel ||
             routerEvent instanceof NavigationError) {
             this.loading = false;
+            this.closeNav();
         }
     }
+     myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+     }
+
+     openNav() {
+         document.getElementById("mySidenav").style.width = "250px";
+         document.getElementById("main").style.marginLeft = "250px";
+     }
+     closeNav() {
+         document.getElementById("mySidenav").style.width = "0";
+         document.getElementById("main").style.marginLeft = "0";
+     }
+
 }

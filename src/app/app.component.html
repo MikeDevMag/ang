@@ -5,18 +5,63 @@
   </h1>
   
 </div>
-<div class="container">
-  <nav [ngClass]="'menu'">
-    <a routerLink="/" routerLinkActive="active-link">Home</a> |
-    <a routerLink="test" routerLinkActive="active-link">test</a> |
-    <a routerLink="test2" routerLinkActive="active-link">test2</a> |
-    <a routerLink="/steps" routerLinkActive="active-link">steps</a>|
-    <a routerLink="/boot" routerLinkActive="active-link">Form</a>|
-    <a routerLink="/books" routerLinkActive="active-link">Books</a>
-  </nav>
-  <br />
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <!--<a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>-->
+  <a routerLink="/" routerLinkActive="active-link">Home</a> |
+  <a routerLink="/books" routerLinkActive="active-link">Books</a>|
+  <a routerLink="test" routerLinkActive="active-link">test</a> |
+  <a routerLink="test2" routerLinkActive="active-link">test2</a> |
+  <a routerLink="/tabs" routerLinkActive="active-link">tabs</a>|
+  <a routerLink="/steps" routerLinkActive="active-link">steps</a>|
 </div>
 
+<div id="main">
+  <!--<h2>Sidenav Push Example</h2>
+  <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>-->
+  <span style="font-size:30px;cursor:pointer" (click)="openNav()">&#9776;</span>
+</div>
+
+
+<!--<div class="topnav" id="myTopnav">
+  <a routerLink="/" routerLinkActive="active-link">Home</a> |
+  <a routerLink="/books" routerLinkActive="active-link">Books</a>|
+  <a routerLink="test" routerLinkActive="active-link">test</a> |
+  <a routerLink="test2" routerLinkActive="active-link">test2</a> |
+  <a routerLink="/tabs" routerLinkActive="active-link">tabs</a>|
+  <a routerLink="/steps" routerLinkActive="active-link">steps</a>|
+
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" (click)="myFunction()">&#9776;</a>
+</div>
+
+<div style="padding-left:16px">
+  <h2>Responsive Topnav Example</h2>
+  <p>Resize the browser window to see how it works.</p>
+</div>-->
+
+<!--<a href="#home">Home</a>
+<a href="#news">News</a>
+<a href="#contact">Contact</a>
+<a href="#about">About</a>-->
+
+
+<!--<div class="container">
+  <nav [ngClass]="'menu'">
+    <a routerLink="/" routerLinkActive="active-link">Home</a> |
+    <a routerLink="/books" routerLinkActive="active-link">Books</a>|
+    <a routerLink="test" routerLinkActive="active-link">test</a> |
+    <a routerLink="test2" routerLinkActive="active-link">test2</a> |
+    <a routerLink="/tabs" routerLinkActive="active-link">tabs</a>|
+    <a routerLink="/steps" routerLinkActive="active-link">steps</a>|
+
+  </nav>
+  <br />
+</div>-->
+    <!--<a routerLink="/boot" routerLinkActive="active-link">Form</a>|-->
+<!--<a routerLink="/names" routerLinkActive="active-link">Names</a>-->
 <router-outlet></router-outlet>
 
 <div class="container-fluid">

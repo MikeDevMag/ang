@@ -18,6 +18,8 @@ import { BookComponent } from './book/book.component';
 
 import { BookResolverServiceService } from './shared/book-resolver-service.service';
 import { BooksResolverServiceService } from './shared/books-resolver-service.service';
+import { NamesListComponent } from './names-list/names-list.component';
+import { TabsComponent } from './tabs/tabs.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { BooksResolverServiceService } from './shared/books-resolver-service.ser
     BootComponent,
     HomeComponent,
     BooksComponent,
-    BookComponent
+    BookComponent,
+    NamesListComponent,
+    TabsComponent
   ],
   imports: [
     BrowserModule,

@@ -3,10 +3,26 @@
     Books works!
   </p>
 
-  <ul>
+  <!--<ul>
     <li *ngFor="let book of books">
     <a href="books/{{book.Id}}">{{ book.Name }}</a>  
     </li>
+  </ul>-->
+  <input type="text" id="myInput" (keyup)="myFunction()" placeholder="Search for books..">
+  <ul id="myUL">
+    <li *ngFor="let book of books">
+      <a href="books/{{book.Id}}">{{ book.Name }}</a>
+    </li>
+    <!--<li><a href="#">Adele</a></li>
+    <li><a href="#">Agnes</a></li>
+
+    <li><a href="#">Billy</a></li>
+    <li><a href="#">Bob</a></li>
+
+    <li><a href="#">Calvin</a></li>
+    <li><a href="#">Christina</a></li>
+    <li><a href="#">Cindy</a></li>-->
   </ul>
+
 
 </div>
